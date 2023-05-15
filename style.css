@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+  padding: 0px;
+
+  #heading {
+    background-color: #f91065;
+  }
+  #heading h1 {
+    padding: 25px;
+    font-size: 20px;
+    color: #383a4c;
+    font-family: sans-serif;
+  }
+  #menu {
+    padding: 25px;
+    background-color: #f8e9e9;
+  }
+ 
+}
