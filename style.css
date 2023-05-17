@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
 
+
   #heading {
     background-color: #f91065;
   }
@@ -15,5 +16,15 @@
     padding: 25px;
     background-color: #f8e9e9;
   }
- 
+  .button {
+    text-align: center;
+    background-color: #f8e9e9;
+    color: #383a4c;
+    text-shadow: 0 0 3px #f91065;
+    width: 400px;
+    height: 75px;
+    font-size: 40px;
+    font-family: sans-serif;
+    border: #f8e9e9;
+  }
 }
