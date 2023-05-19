@@ -2,29 +2,65 @@
   margin: 0px;
   padding: 0px;
 
-
+  /* Header */
   #heading {
     background-color: #f91065;
-  }
-  #heading h1 {
     padding: 25px;
-    font-size: 20px;
+  }
+
+  #heading h1 {
+    top: 25px;
+    left: 25;
+    font-size: 25px;
     color: #383a4c;
     font-family: sans-serif;
   }
-  #menu {
-    padding: 25px;
-    background-color: #f8e9e9;
+
+  #txtBusca {
+    padding: 5px;
+    border: 1px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 600px;
+    position: fixed;
+    top: 25px;
+    left: 275px;
   }
-  .button {
+  .imgSacola{
+    position: absolute;
+    right: 175px;
+    top: 10px;
+  }
+  #txtSacola{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #ffffff;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
+
+  /* Nav do site */
+  #menu {
+    padding: 10px;
+    background-color: #f8e9e9;
     text-align: center;
+  }
+
+  .button {
     background-color: #f8e9e9;
     color: #383a4c;
     text-shadow: 0 0 3px #f91065;
     width: 400px;
     height: 75px;
-    font-size: 40px;
+    font-size: 30px;
     font-family: sans-serif;
     border: #f8e9e9;
+    cursor: pointer;
+  }
+  .imgEnvio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
