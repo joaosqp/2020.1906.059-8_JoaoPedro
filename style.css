@@ -22,16 +22,16 @@
     border-radius: 10px;
     font-size: 16px;
     width: 600px;
-    position: fixed;
+    position: absolute;
     top: 25px;
     left: 275px;
   }
-  .imgSacola{
+  .imgSacola {
     position: absolute;
     right: 175px;
     top: 10px;
   }
-  #txtSacola{
+  #txtSacola {
     font-size: 15px;
     font-family: sans-serif;
     color: #ffffff;
@@ -40,7 +40,7 @@
     right: 50px;
   }
 
-  /* Nav do site */
+  /* Nav do site: */
   #menu {
     padding: 10px;
     background-color: #f8e9e9;
@@ -62,5 +62,51 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  /*Produtos do site*/
+  #afasta {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  #geral {
+    height: 1000px;
+  }
+
+  .imgVibrador {
+    display: block;
+    margin-left: 300px;
+    margin-right: auto;
+  }
+
+  #sobre {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    top: 300px;
+    right: 150px;
+    font-family: sans-serif;
+  }
+
+  #valor {
+    font-size: 20px;
+  }
+
+  .imgSeta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*Footer do site:*/
+  #rodape {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: #383a4c;
   }
 }
