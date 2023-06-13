@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './header.css'
-import Envio from './images/envio.png'
+import Envio from '../../images/envio.png'
 
 export const Header = () => {
   return (
@@ -14,7 +14,7 @@ export const Header = () => {
         <input className='pesquisar' type='text' name='Sagrado' placeholder='Digite oque você procura...' />
       </div>
       <div>
-      <img src="" alt='Imagem ilustrativa de envio' />
+      <img src="Envio" alt='Imagem ilustrativa de envio' />
       </div>
     </header>
   )
