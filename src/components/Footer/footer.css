@@ -1,9 +1,14 @@
-.rodape {
+footer {
     border-top: 1px solid #f91065;
     bottom: 0;
     left: 0;
-    height: 80px;
+    padding: 30px;
     position: fixed;
     width: 100%;
-    background-color: #383a4c;
+    background-color: #ffedef;
+
+    background-image: url(../../images/logo.jpeg); /*Por a imagem no dodapé*/
+    background-size: contain; /*fazer com que a imagem se adapta ao tamanho maximo do rodapé*/
+    background-position: center; /*Centralizar a imagem*/
+    background-repeat: no-repeat; /*Fazer com que a imagem não se repita varias vezes*/
 }
