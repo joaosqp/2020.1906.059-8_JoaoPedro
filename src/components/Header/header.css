@@ -1,13 +1,12 @@
 header {
     background-color: #f91065;
-    padding: 25px;
+    display: flex;
+    padding: 10px;
 }
 
-.label {
-    display: flex;
-    top: 25px;
-    left: 25px;
+.titulo {
     font-size: 25px;
+    margin-left: 5%;
 }
 
 .nomeSagrado {
@@ -17,14 +16,16 @@ header {
     font-weight: bold;
 }
 
-.pesquisar {
-    display: flex;
+.pesquisar{
+    margin-top: 5px;
+    margin-left: 5%;
     padding: 5px;
     border: 2px solid #000;
     border-radius: 25px;
-    font-size: 16px;
-    width: 600px;
-    top: 27px;
-    left: 220px;
-    position: absolute;
+    font-size: 14px;
+    width: 500px;
+}
+
+.sacola{
+    margin-left: 40%;
 }
