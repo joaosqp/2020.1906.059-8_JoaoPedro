@@ -30,7 +30,7 @@ export const Header = () => {
           <Link className='link' to="/">COSMÉTICOS</Link>
         </nav>
       </div>
-      <img src={Envio} alt='teste'/>
+      <img src={Envio} alt='imagem de envio'/>
     </header>
   )
 }
