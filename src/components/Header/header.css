@@ -1,4 +1,5 @@
-header {
+/*Primeira linha do cabeçalho*/
+.menu1 {
     background-color: #f91065;
     display: flex;
     padding: 10px;
@@ -26,6 +27,27 @@ header {
     width: 500px;
 }
 
-.sacola{
-    margin-left: 40%;
+/*Segunda linha do cabeçalho*/
+div.menu2{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffedef;
+}
+
+nav.menu2{
+    font-size: 30px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.menu2 span{
+    font-size: 40px;
+    color: black;
+    padding: 0 150px;
 }

@@ -5,19 +5,32 @@ import Envio from '../../images/envio.png'
 export const Header = () => {
   return (
     <header>
-      <div className='titulo'>
-        <label htmlFor='Sagrado'>
-          <Link to={'/'} className='nomeSagrado'>
-            Sagrado Prazer
-          </Link>
-        </label>
+      <div className='menu1'>
+        <div className='titulo'>
+          <label htmlFor='Sagrado'>
+            <Link to={'/'} className='nomeSagrado'>
+              Sagrado Prazer
+            </Link>
+          </label>
+        </div>
+        <div>
+          <input className='pesquisar' type='text' name='Sagrado' placeholder='Digite oque você procura...' />
+        </div>
       </div>
-      <div>
-        <input className='pesquisar' type='text' name='Sagrado' placeholder='Digite oque você procura...' />
+      <div className='menu2'>
+        <nav className='menu2'>
+          <Link className='link' to="/">MASTURBADORES</Link>
+        </nav>
+        <span>|</span>
+        <nav className='menu2'>
+          <Link className='link' to="/">VIBRADORES</Link>
+        </nav>
+        <span>|</span> 
+        <nav className='menu2'>
+          <Link className='link' to="/">COSMÉTICOS</Link>
+        </nav>
       </div>
-      <div className='sacola'>
-        <img src="Envio" alt='Imagem ilustrativa de envio' />
-      </div>
+      <img src={Envio} alt='teste'/>
     </header>
   )
 }
