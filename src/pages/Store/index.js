@@ -1,16 +1,43 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios';
+import './store.css'
 
 
 export const Store = () => {
+  const [products, setProducts] = useState([]);
+  const [carregando, setCarregando] = useState(true);
 
-  const [data, setData] = useState([]);
 
-  
+  useEffect(() => {
+    axios.get('https://raw.githubusercontent.com/joaosqp/apiShop/main/produtos.json')
+      .then((response) => {
+        setProducts(response.data);
+        setTimeout(setCarregando(false), 3000);
+      })
+      .catch((error) => {
+        console.log('Falha', error);
+      });
+  }, []);
+
+  if (carregando) {
+    return (
+      <div className='loading'>
+        <h1> CARREGANDO...</h1>
+      </div>
+    )
+  }
 
   return (
-    <div>
-      <h1>Store</h1>
+    <div className='gondula' >
+      {products.map((product, key) => (
+        <div className='produtos' key={key}>
+          <img src={`${product.foto}`}
+           alt={product.foto}
+          />
+          <h1> {product.nome}</h1>
+          <h1> R${product.valor}</h1>
+        </div>
+      ))}
     </div>
-  )
-
-}
+  );
+};
