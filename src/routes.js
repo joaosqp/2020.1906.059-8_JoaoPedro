@@ -22,6 +22,7 @@ function RoutesApp() {
                     <Route path='/Login' element={<Login />} />
                     <Route path='/Registro' element={<Registro />} />
                     <Route path='/Root' element={<Root />} />
+                    <Route path='/descricao/:id' element={<Descricao />} />
                     <Route path='*' element={<Erro />} />
                 </Route>
             </Routes>

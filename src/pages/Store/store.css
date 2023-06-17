@@ -1,0 +1,31 @@
+.loading {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gondula {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .produtos {
+    text-decoration: none;
+    width: 23%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .produtos img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .produtos h1 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
