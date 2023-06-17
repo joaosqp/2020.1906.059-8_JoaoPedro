@@ -1,18 +1,28 @@
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 import Logo_login from "../../images/logo_login.png";
-
 import "./login.css";
 
 function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    
+    if (email === "root@root" && password === "root") {
+      navigate("/root");
+    } else {
+      alert("Credenciais inválidas. Por favor, tente novamente.");
+    }
+  };
 
   return (
     <div className="container">
       <div className="container-login">
         <div className="wrap-login">
-          <form className="login-form">
+          <form className="login-form" onSubmit={handleLogin}>
             <span className="login-form-title"> Bem vindo </span>
 
             <span className="login-form-title">
@@ -36,7 +46,10 @@ function App() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <span className="focus-input" data-placeholder="Password"></span>
+              <span
+                className="focus-input"
+                data-placeholder="Password"
+              ></span>
             </div>
 
             <div className="container-login-form-btn">

@@ -7,6 +7,7 @@ import { Store } from './pages/Store';
 import { Descricao } from './pages/Descricao';
 import { Erro } from './pages/erro';
 import { Registro } from './pages/Registro';
+import { Root } from './pages/Root';
 import Login from './pages/Login';
 
 
@@ -20,6 +21,7 @@ function RoutesApp() {
                     <Route path='/Descricao' element={<Descricao />} />
                     <Route path='/Login' element={<Login />} />
                     <Route path='/Registro' element={<Registro />} />
+                    <Route path='/Root' element={<Root />} />
                     <Route path='*' element={<Erro />} />
                 </Route>
             </Routes>
