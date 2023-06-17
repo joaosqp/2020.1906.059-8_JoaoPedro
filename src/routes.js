@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
-import { Header } from './components/Header';
+/*import { Header } from './components/Header';*/
 import { Footer } from './components/Footer';
 
 import { Store } from './pages/Store';
@@ -14,7 +14,6 @@ import Login from './pages/Login';
 function RoutesApp() {
     return (
         <BrowserRouter>
-            <Header />
             <Routes>
                 <Route>
                     <Route path='/' element={<Store />} />

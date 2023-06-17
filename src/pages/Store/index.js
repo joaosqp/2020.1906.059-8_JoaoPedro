@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './store.css'
 
+import { Header } from '../../components/Header'
+
 
 export const Store = () => {
   const [products, setProducts] = useState([]);
@@ -29,14 +31,17 @@ export const Store = () => {
   }
 
   return (
-    <div className='gondula'>
-      {products.map((product, key) => (
-        <Link to={`/descricao/${product.id}`} key={key} className='produtos'>
-          <img src={`${product.foto}`} alt={product.foto} />
-          <h1>{product.nome}</h1>
-          <h1>R${product.valor}</h1>
-        </Link>
-      ))}
+    <div>
+      <Header />
+      <div className='gondula'>
+        {products.map((product, key) => (
+          <Link to={`/descricao/${product.id}`} key={key} className='produtos'>
+            <img src={`${product.foto}`} alt={product.foto} />
+            <h1>{product.nome}</h1>
+            <h1>R${product.valor}</h1>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };

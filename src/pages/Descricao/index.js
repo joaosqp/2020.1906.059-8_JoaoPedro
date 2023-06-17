@@ -3,6 +3,8 @@ import './descricao.css';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
+import { Header } from '../../components/Header'
+
 export const Descricao = () => {
   const [descricaoProduto, setDescricaoProduto] = useState({});
   const { id } = useParams();
@@ -18,13 +20,16 @@ export const Descricao = () => {
   }, [id]);
 
   return (
-    <div className='imagem'>
-      <img src={`${descricaoProduto.foto}`} alt={descricaoProduto.foto} />
-      <div className='descricao'>
-        <h1>{descricaoProduto.nome}</h1>
-        <h1>{descricaoProduto.valor}</h1>
+    <div>
+      <Header />
+      <div>
+        <img src={`${descricaoProduto.foto}`} alt={descricaoProduto.foto} />
+        <div>
+          <h1>{descricaoProduto.nome}</h1>
+          <h1>{descricaoProduto.valor}</h1>
+        </div>
+        <p>{descricaoProduto.descricao}</p>
       </div>
-      <p>{descricaoProduto.descricao}</p>
     </div>
   );
 }
