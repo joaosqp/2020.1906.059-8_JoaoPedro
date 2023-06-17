@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './store.css'
 
@@ -28,15 +29,13 @@ export const Store = () => {
   }
 
   return (
-    <div className='gondula' >
+    <div className='gondula'>
       {products.map((product, key) => (
-        <div className='produtos' key={key}>
-          <img src={`${product.foto}`}
-           alt={product.foto}
-          />
-          <h1> {product.nome}</h1>
-          <h1> R${product.valor}</h1>
-        </div>
+        <Link to={`/descricao/${product.id}`} key={key} className='produtos'>
+          <img src={`${product.foto}`} alt={product.foto} />
+          <h1>{product.nome}</h1>
+          <h1>R${product.valor}</h1>
+        </Link>
       ))}
     </div>
   );

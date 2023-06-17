@@ -13,6 +13,7 @@
   }
   
   .produtos {
+    text-decoration: none;
     width: 23%;
     margin-bottom: 20px;
     padding: 10px;
