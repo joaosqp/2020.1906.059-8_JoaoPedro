@@ -1,37 +1,59 @@
-import React, { useState } from 'react';
-import "./login.css"
+import { useState } from "react";
 
-const LoginPage = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+import Logo_login from "../../images/logo_login.png";
 
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
+import "./login.css";
 
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
-
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    // Aqui você pode fazer a validação dos campos de login e implementar a lógica de autenticação
-  };
+function App() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
-    <div className="login-page">
-      <h2>Login</h2>
-      <form className="login-form" onSubmit={handleFormSubmit}>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" value={email} onChange={handleEmailChange} />
+    <div className="container">
+      <div className="container-login">
+        <div className="wrap-login">
+          <form className="login-form">
+            <span className="login-form-title"> Bem vindo </span>
 
-        <label htmlFor="password">Password:</label>
-        <input type="password" id="password" value={password} onChange={handlePasswordChange} />
+            <span className="login-form-title">
+              <img src={Logo_login} alt="Sagrado Prazer" />
+            </span>
 
-        <button type="submit">Login</button>
-      </form>
+            <div className="wrap-input">
+              <input
+                className={email !== "" ? "has-val input" : "input"}
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <span className="focus-input" data-placeholder="Email"></span>
+            </div>
+
+            <div className="wrap-input">
+              <input
+                className={password !== "" ? "has-val input" : "input"}
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <span className="focus-input" data-placeholder="Password"></span>
+            </div>
+
+            <div className="container-login-form-btn">
+              <button className="login-form-btn">Login</button>
+            </div>
+
+            <div className="text-center">
+              <span className="txt1">Não possui conta? </span>
+              <a className="txt2" href="./Registro">
+                Criar conta
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   );
-};
+}
 
-export default LoginPage;
+export default App;

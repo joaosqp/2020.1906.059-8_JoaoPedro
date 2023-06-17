@@ -6,6 +6,7 @@ import { Footer } from './components/Footer';
 import { Store } from './pages/Store';
 import { Descricao } from './pages/Descricao';
 import { Erro } from './pages/erro';
+import { Registro } from './pages/Registro';
 import Login from './pages/Login';
 
 
@@ -18,6 +19,7 @@ function RoutesApp() {
                     <Route path='/' element={<Store />} />
                     <Route path='/Descricao' element={<Descricao />} />
                     <Route path='/Login' element={<Login />} />
+                    <Route path='/Registro' element={<Registro />} />
                     <Route path='*' element={<Erro />} />
                 </Route>
             </Routes>
