@@ -16,6 +16,13 @@ export const Header = () => {
         <div>
           <input className='pesquisar' type='text' name='Sagrado' placeholder='Digite oque você procura...' />
         </div>
+        <div className='login'>
+          <label>
+            <Link to={'/login'} className='linkLogin'>
+              LOGIN
+            </Link>
+          </label>
+        </div>
       </div>
       <div className='menu2'>
         <nav className='menu2'>
