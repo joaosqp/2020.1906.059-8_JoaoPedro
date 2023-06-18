@@ -39,5 +39,5 @@ export const Header = () => {
       </div>
       <img src={Envio} alt='imagem de envio'/>
     </header>
-  )
+  );
 }

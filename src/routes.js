@@ -7,7 +7,7 @@ import { Store } from './pages/Store';
 import { Descricao } from './pages/Descricao';
 import { Erro } from './pages/erro';
 import { Registro } from './pages/Registro';
-import { Root } from './pages/Root';
+import  Root from './pages/Root';
 import Login from './pages/Login';
 
 
