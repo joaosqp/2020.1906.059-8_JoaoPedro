@@ -55,7 +55,8 @@ export const Store = () => {
             <h1>{product.nome}</h1>
             <h1>R${product.valor}</h1>
             </Link>
-            <button onClick={() => handleClick(product)}>
+            <button onClick={() => handleClick(product)} className='button'>
+              Adicionar ao Carrinho
               {
                 carrinho.some((itemCarrinho) => itemCarrinho.id === product.id) ? (
                   <BsFillCartCheckFill />
