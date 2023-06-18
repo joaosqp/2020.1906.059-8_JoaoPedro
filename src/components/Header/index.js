@@ -13,13 +13,6 @@ export const Header = () => {
             </Link>
           </label>
         </div>
-        <div className='carrinho'>
-            <label>
-              <Link to={'/carrinho'} className='linkCarrinho'>
-                CARRINHO
-              </Link>
-            </label>
-          </div>
         <div>
           <input className='pesquisar' type='text' name='Sagrado' placeholder='Digite oque você procura...' />
         </div>
@@ -27,6 +20,13 @@ export const Header = () => {
           <label>
             <Link to={'/login'} className='linkLogin'>
               LOGIN
+            </Link>
+          </label>
+        </div>
+        <div className='carrinho'>
+          <label>
+            <Link to={'/carrinho'} className='linkCarrinho'>
+              CARRINHO
             </Link>
           </label>
         </div>

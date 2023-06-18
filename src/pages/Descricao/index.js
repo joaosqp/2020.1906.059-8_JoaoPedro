@@ -20,7 +20,7 @@ export const Descricao = () => {
   }, [id]);
 
   return (
-    <div>
+    <div className='main'>
       <Header />
       <div>
         <img src={`${descricaoProduto.foto}`} alt={descricaoProduto.foto} />
