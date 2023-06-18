@@ -5,10 +5,12 @@ import { Footer } from './components/Footer';
 
 import { Store } from './pages/Store';
 import { Descricao } from './pages/Descricao';
-import { Erro } from './pages/erro';
 import { Registro } from './pages/Registro';
 import { Root } from './pages/Root';
 import Login from './pages/Login';
+import { Carrinho } from './pages/Carrinho';
+
+import { Erro } from './pages/erro';
 
 
 function RoutesApp() {
@@ -22,6 +24,7 @@ function RoutesApp() {
                     <Route path='/Registro' element={<Registro />} />
                     <Route path='/Root' element={<Root />} />
                     <Route path='/descricao/:id' element={<Descricao />} />
+                    <Route path='/carrinho' element={<Carrinho />} />
                     <Route path='*' element={<Erro />} />
                 </Route>
             </Routes>

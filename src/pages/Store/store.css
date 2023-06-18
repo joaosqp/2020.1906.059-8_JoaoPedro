@@ -1,37 +1,41 @@
 .loading {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.main{
+.main {
   margin-bottom: 70px;
 }
 
 .gondula {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0px;
-  }
-  
-  .produtos {
-    text-decoration: none;
-    width: 23%;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-  }
-  
-  .produtos img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .produtos h1 {
-    font-size: 16px;
-    margin-top: 10px;
-  }
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+}
+
+.produtos {
+  width: 23%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.linkDescricao {
+  text-decoration: none;
+}
+
+.produtos img {
+  width: 100%;
+  height: auto;
+}
+
+
+.produtos h1 {
+  font-size: 16px;
+  margin-top: 10px;
+}

@@ -13,6 +13,13 @@ export const Header = () => {
             </Link>
           </label>
         </div>
+        <div className='carrinho'>
+            <label>
+              <Link to={'/carrinho'} className='linkCarrinho'>
+                CARRINHO
+              </Link>
+            </label>
+          </div>
         <div>
           <input className='pesquisar' type='text' name='Sagrado' placeholder='Digite oque você procura...' />
         </div>
