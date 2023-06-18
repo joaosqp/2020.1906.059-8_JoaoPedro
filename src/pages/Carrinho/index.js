@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Header } from '../../components/Header'
-import { getItem } from '../../services/LocalStorage'
+import { getItem, setItem } from '../../services/LocalStorage'
 import { BsFillCartDashFill } from 'react-icons/bs'
+import { Link } from "react-router-dom";
 
 
 
@@ -11,6 +12,7 @@ export const Carrinho = () => {
     const removeItem = (obj) => {
         const arrFilter = products.filter((products) => products.id !== obj.id)
         setProducts(arrFilter)
+        setItem('carrinhos',arrFilter)
     }
 
 
@@ -25,12 +27,14 @@ export const Carrinho = () => {
                         <h1>{product.nome}</h1>
                         <h1>R${product.valor}</h1>
                         <button onClick={() => removeItem(product)}>
-
                             <BsFillCartDashFill />
                         </button>
                     </div>
                 ))}
             </div>
+            <Link to={'/'}>
+                Continue comprando
+            </Link>
         </div>
     );
 };
