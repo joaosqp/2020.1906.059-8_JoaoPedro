@@ -49,14 +49,15 @@
 
 /*CSS do carrinho*/
 .linkCC{
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #f91065;
+  color: #ffedef;
   text-decoration: none;
-  padding: 10px 100px 10px 100px;
-  border: 1px solid black;
-  border-radius: 20px;
-  background-color: #ffedef ;
-  font-size: 20px;
+  border-radius: 4px;
 }
 
 .linkCC:hover{
   background-color: #f91065 ;
 }
+

@@ -30,7 +30,7 @@ export const Descricao = () => {
         </div>
         <p>{descricaoProduto.descricao}</p>
       </div>
-      <Link to={'/'}>
+      <Link to={'/'} className='linkD'>
         Continue comprando
       </Link>
     </div>
