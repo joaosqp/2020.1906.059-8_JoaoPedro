@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './descricao.css';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { Header } from '../../components/Header'
 
@@ -22,14 +22,17 @@ export const Descricao = () => {
   return (
     <div className='main'>
       <Header />
-      <div>
+      <div className='imagem'>
         <img src={`${descricaoProduto.foto}`} alt={descricaoProduto.foto} />
-        <div>
+        <div className='countainer'>
           <h1>{descricaoProduto.nome}</h1>
-          <h1>{descricaoProduto.valor}</h1>
+          <h2>R${descricaoProduto.valor}</h2>
         </div>
         <p>{descricaoProduto.descricao}</p>
       </div>
+      <Link to={'/'}>
+        Continue comprando
+      </Link>
     </div>
   );
 }
