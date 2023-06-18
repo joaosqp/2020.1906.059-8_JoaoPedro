@@ -31,7 +31,7 @@ export const Store = () => {
   }
 
   return (
-    <div>
+    <div className='main'>
       <Header />
       <div className='gondula'>
         {products.map((product, key) => (
