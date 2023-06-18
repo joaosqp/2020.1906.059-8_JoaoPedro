@@ -31,7 +31,9 @@ h2 {
 p {
   font-size: 18px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: justify;
+  
+  padding: 20px 150px 20px 150px;
 }
 
 .linkD {
