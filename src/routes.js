@@ -6,7 +6,7 @@ import { Footer } from './components/Footer';
 import { Store } from './pages/Store';
 import { Descricao } from './pages/Descricao';
 import { Registro } from './pages/Registro';
-import { Root } from './pages/Root';
+import  Root from './pages/Root';
 import Login from './pages/Login';
 import { Carrinho } from './pages/Carrinho';
 
