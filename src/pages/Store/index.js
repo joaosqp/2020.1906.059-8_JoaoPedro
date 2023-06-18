@@ -10,13 +10,22 @@ import { Header } from '../../components/Header'
 
 export const Store = () => {
   const [products, setProducts] = useState([]);
+  const [productsTemp, setProductsTemp] = useState([]);
   const [carrinho, setCarrinho] = useState(getItem('carrinhos') || []);
   const [carregando, setCarregando] = useState(true);
 
+  const filtrarPorCategoria = (categoriaName) => {
+    setProductsTemp(products.filter((product) => product.categoria === categoriaName))    
+  }
+
+  const resetar = () => {
+    setProductsTemp(products);
+  }
 
   useEffect(() => {
     axios.get('https://raw.githubusercontent.com/joaosqp/apiShop/main/produtos.json')
       .then((response) => {
+        setProductsTemp(response.data);
         setProducts(response.data);
         setTimeout(setCarregando(false), 3000);
       })
@@ -46,9 +55,9 @@ export const Store = () => {
 
   return (
     <div className='main'>
-      <Header />
+      <Header filtrarPorCategoria = {filtrarPorCategoria} resetar = {resetar} />
       <div className='gondula'>
-        {products.map((product, key) => (
+        {productsTemp.map((product, key) => (
           <div key={key} className='produtos'>
           <Link to={`/descricao/${product.id}`} key={key} className='linkDescricao'>
             <img src={`${product.foto}`} alt={product.foto} />
