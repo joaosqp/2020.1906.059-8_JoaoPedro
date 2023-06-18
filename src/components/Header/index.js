@@ -2,13 +2,22 @@ import { Link } from 'react-router-dom'
 import './header.css'
 import Envio from '../../images/envio.png'
 
-export const Header = () => {
+export const Header = (props) => {
+
+  const filtrarPorCategoria = (categoriaName) => {
+    props.filtrarPorCategoria(categoriaName);
+  }
+
+  const resetar = () => {
+    props.resetar();
+  }
+
   return (
     <header>
       <div className='menu1'>
         <div className='titulo'>
           <label htmlFor='Sagrado'>
-            <Link to={'/'} className='nomeSagrado'>
+            <Link className='nomeSagrado' onClick={() => resetar()}>
               Sagrado Prazer
             </Link>
           </label>
@@ -32,16 +41,16 @@ export const Header = () => {
         </div>
       </div>
       <div className='menu2'>
-        <nav className='menu2'>
-          <Link className='link' to="/">MASTURBADORES</Link>
+        <nav className='menu2' onClick={() => filtrarPorCategoria('masturbador')}>
+          <Link className='link'>MASTURBADORES</Link>
         </nav>
         <span>|</span>
         <nav className='menu2'>
-          <Link className='link' to="/">VIBRADORES</Link>
+          <Link className='link' onClick={() => filtrarPorCategoria('vibrador')}>VIBRADORES</Link>
         </nav>
         <span>|</span> 
         <nav className='menu2'>
-          <Link className='link' to="/">COSMÉTICOS</Link>
+          <Link className='link' onClick={() => filtrarPorCategoria('cosmetico')}>COSMÉTICOS</Link>
         </nav>
       </div>
       <img src={Envio} alt='imagem de envio'/>
