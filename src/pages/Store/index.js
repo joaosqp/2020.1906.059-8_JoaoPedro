@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import  axios  from 'axios';
-import './store.css'
-import { BsFillCartCheckFill, BsCartPlusFill } from 'react-icons/bs'
-import { getItem  , setItem } from '../../services/LocalStorage'
+import './store.css';
+import { BsFillCartCheckFill, BsCartPlusFill } from 'react-icons/bs';
+import { getItem  , setItem } from '../../services/LocalStorage';
 
-import { Header } from '../../components/Header'
+import { Appbar } from '../../components/Appbar';
+import { CategoriasHeader } from '../../components/CategoriasHeader';
 
 
 export const Store = () => {
@@ -16,10 +17,6 @@ export const Store = () => {
 
   const filtrarPorCategoria = (categoriaName) => {
     setProductsTemp(products.filter((product) => product.categoria === categoriaName))    
-  }
-
-  const resetar = () => {
-    setProductsTemp(products);
   }
 
   useEffect(() => {
@@ -55,7 +52,8 @@ export const Store = () => {
 
   return (
     <div className='main'>
-      <Header filtrarPorCategoria = {filtrarPorCategoria} resetar = {resetar} />
+      <Appbar/>
+      <CategoriasHeader filtrarPorCategoria = {filtrarPorCategoria}/>
       <div className='gondula'>
         {productsTemp.map((product, key) => (
           <div key={key} className='produtos'>

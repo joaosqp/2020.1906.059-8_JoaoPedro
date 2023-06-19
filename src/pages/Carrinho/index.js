@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Header } from '../../components/Header';
 import { getItem, setItem } from '../../services/LocalStorage';
 import { BsFillCartDashFill } from 'react-icons/bs';
 import { Link } from "react-router-dom";
+import { Appbar } from "../../components/Appbar";
 
 
 
@@ -19,7 +19,7 @@ export const Carrinho = () => {
 
     return (
         <div className='main'>
-            <Header />
+            <Appbar />
             <div className='gondula'>
                 {products.map((product, key) => (
                     <div key={key} className='produtos'>
