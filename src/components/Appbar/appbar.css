@@ -6,7 +6,7 @@
 }
 
 .titulo {
-    font-size: 25px;
+    font-size: 22px;
     margin-left: 5%;
 }
 
@@ -35,7 +35,7 @@
 
 .login{
     margin-top: 5px;
-    margin-left: 46%;
+    margin-left: 35%;
 }
 
 .linkLogin{
@@ -57,30 +57,4 @@
     border-radius: 25px;
     font-size: 14px;
     width: 500px;
-}
-
-/*Segunda linha do cabeçalho*/
-div.menu2{
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    background-color: #ffedef;
-}
-
-nav.menu2{
-    font-size: 30px;
-    padding: 10px;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: #383a4c;
-}
-
-.link{
-    text-decoration: none;
-}
-
-.menu2 span{
-    font-size: 40px;
-    color: black;
-    padding: 0 150px;
 }
