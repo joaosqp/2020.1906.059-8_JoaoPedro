@@ -56,7 +56,7 @@ export const Store = () => {
   return (
     <div className='main'>
       <Header filtrarPorCategoria = {filtrarPorCategoria} resetar = {resetar} />
-      <div className='gondula'>
+      <div className='productList'>
         {productsTemp.map((product, key) => (
           <div key={key} className='produtos'>
           <Link to={`/descricao/${product.id}`} key={key} className='linkDescricao'>
