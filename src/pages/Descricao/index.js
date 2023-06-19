@@ -3,7 +3,7 @@ import './descricao.css';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
 
-import { Header } from '../../components/Header'
+import { Appbar } from '../../components/Appbar'
 
 export const Descricao = () => {
   const [descricaoProduto, setDescricaoProduto] = useState({});
@@ -21,7 +21,7 @@ export const Descricao = () => {
 
   return (
     <div className='main'>
-      <Header />
+      <Appbar />
       <div className='imagem'>
         <img src={`${descricaoProduto.foto}`} alt={descricaoProduto.foto} />
         <div className='countainer'>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './root.css';
-import { Header } from '../../components/Header'
+import { Appbar } from '../../components/Appbar';
 
 function Root() {
   const [nome, setNome] = useState('');
@@ -29,7 +29,7 @@ const handleSubmit = (e) => {
 
   return (
     <div>
-      < Header />
+      < Appbar />
       <form onSubmit={handleSubmit} className="formulario">
         <div className="campo">
           <label htmlFor="nome">Nome:</label>
