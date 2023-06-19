@@ -16,11 +16,10 @@ export const Carrinho = () => {
     }
 
 
-
     return (
         <div className='main'>
             <Header />
-            <div className='gondula'>
+            <div className='productList'>
                 {products.map((product, key) => (
                     <div key={key} className='produtos'>
                         <img src={`${product.foto}`} alt={product.foto} />
